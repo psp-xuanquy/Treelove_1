@@ -11,8 +11,12 @@
             font-size: 18px;
             line-height: 1.8;
             padding: 24px;
-            border-radius: 12px;
+            max-width: 800px; 
+            margin: 0 auto; 
+            border-radius: 10px;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            background-color: #fffefc;
+            color: #222;
         }
 
             #code .say {
@@ -20,7 +24,8 @@
                 margin-bottom: 18px;
             }
 
-                #code .say[style*="italic"] {
+                #code .say[style*="italic"],
+                #code .say.center {
                     font-style: italic;
                     font-size: 17px;
                     color: #555;
@@ -28,6 +33,11 @@
                     margin-top: 30px;
                     line-height: 1.6;
                 }
+
+        #heart {
+            text-align: center;
+            margin: 20px 0;
+        }
     </style>
 
     <script type="text/javascript" src="./asset/jquery.min.js"></script>
@@ -47,8 +57,9 @@
             <div id="text" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                 <div id="code">
                     <span class="say">Chúc mừng ngày 20/10 – ngày của những đóa hoa rạng rỡ, những tâm hồn đẹp đẽ giữa nhân gian.</span>
-                    <span class="say">Chúc các chị em mỗi ngày đều tràn ngập niềm vui, mỗi bước đi mạnh mẽ và mỗi nụ cười là viên ngọc quý trong cuộc sống.</span>
-                    <span class="say">Mong những người phụ nữ luôn rực rỡ như nắng mai, dịu dàng như gió sớm, mạnh mẽ và hạnh phúc trên hành trình của riêng mình.</span>
+
+                    <span class="say">Chúc các chị em luôn mạnh mẽ, rạng rỡ và hạnh phúc trên hành trình riêng mình.</span>
+
                     <span class="say">Xin chúc các bạn nữ một ngày 20/10 thật ngọt ngào, ý nghĩa, lấp lánh yêu thương như một bản tình ca nhẹ nhàng giữa thanh xuân.</span>
 
                     <span class="say" style="font-style: italic; margin-top: 20px;">
@@ -60,7 +71,7 @@
                         <img width="100px" height="100px" src="image/tym.png" alt="Heart">
                     </div>
 
-                    <span class="say">--Thân gửi từ những Quý ông đến từ team ESHOP 2 😎--</span>
+                    <span class="say center">--Thân gửi từ những Quý ông đến từ team ESHOP 2 😎--</span>
                 </div>
             </div>
             <canvas id="canvas" width="1100" height="680"></canvas>
