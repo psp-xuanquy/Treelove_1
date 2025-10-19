@@ -1,17 +1,17 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
     <title>Chúc mừng ngày 20/10</title>
-    <link type="text/css" rel="stylesheet" href="./asset/style.css">
+    <link rel="stylesheet" href="./asset/style.css">
 
     <style>
         #code {
             font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
             font-size: 18px;
             line-height: 1.8;
-            padding: 24px;
-            max-width: 680px;
+            padding: 20px;
+            max-width: 640px;
             margin: 0 auto;
             border-radius: 10px;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
@@ -30,25 +30,38 @@
                     font-size: 17px;
                     color: #555;
                     text-align: center;
-                    margin-top: 30px;
+                    margin-top: 25px;
                     line-height: 1.6;
                 }
 
         #heart {
             text-align: center;
-            margin: 20px 0;
+            margin: 10px 0 8px 0; 
+        }
+
+            #heart img {
+                width: 80px;
+                height: 80px;
+            }
+
+        .signature {
+            text-align: center;
+            font-style: italic;
+            font-size: 16px;
+            color: #444;
+            margin-top: 5px;
         }
     </style>
 
-    <script type="text/javascript" src="./asset/jquery.min.js"></script>
-    <script type="text/javascript" src="./asset/jscex.min.js"></script>
-    <script type="text/javascript" src="./asset/jscex-parser.js"></script>
-    <script type="text/javascript" src="./asset/jscex-jit.js"></script>
-    <script type="text/javascript" src="./asset/jscex-builderbase.min.js"></script>
-    <script type="text/javascript" src="./asset/jscex-async.min.js"></script>
-    <script type="text/javascript" src="./asset/jscex-async-powerpack.min.js"></script>
-    <script type="text/javascript" src="./asset/functions.js" charset="utf-8"></script>
-    <script type="text/javascript" src="./asset/love.js" charset="utf-8"></script>
+    <script src="./asset/jquery.min.js"></script>
+    <script src="./asset/jscex.min.js"></script>
+    <script src="./asset/jscex-parser.js"></script>
+    <script src="./asset/jscex-jit.js"></script>
+    <script src="./asset/jscex-builderbase.min.js"></script>
+    <script src="./asset/jscex-async.min.js"></script>
+    <script src="./asset/jscex-async-powerpack.min.js"></script>
+    <script src="./asset/functions.js" charset="utf-8"></script>
+    <script src="./asset/love.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -68,10 +81,12 @@
                     </span>
 
                     <div id="heart">
-                        <img width="100px" height="100px" src="image/tym.png" alt="Heart">
+                        <img src="image/tym.png" alt="Heart">
                     </div>
 
-                    <span class="say center">--Thân gửi từ những Quý ông đến từ team ESHOP 2 😎--</span>
+                    <div class="signature">
+                        --Thân gửi từ những Quý ông team ESHOP 2 😎--
+                    </div>
                 </div>
             </div>
             <canvas id="canvas" width="1100" height="680"></canvas>
